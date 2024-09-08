@@ -134,8 +134,13 @@ const ProjectFetcherHOC = function (WrappedComponent) {
         reduxProjectId: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
         setProjectId: PropTypes.func
     };
+    // ProjectFetcherComponent.defaultProps = {
+    //     assetHost: 'https://assets.scratch.mit.edu',
+    //     projectHost: 'https://projects.scratch.mit.edu'
+    // };
+    // 使用七牛cdn
     ProjectFetcherComponent.defaultProps = {
-        assetHost: 'https://assets.scratch.mit.edu',
+        assetHost: 'http://qny.wejudge.online/',
         projectHost: 'https://projects.scratch.mit.edu'
     };
 
