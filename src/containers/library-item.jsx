@@ -110,7 +110,7 @@ class LibraryItem extends React.PureComponent {
         //     this.props.iconRawURL;
         // 使用七牛云存储
         const iconURL = iconMd5 ?
-            `https://qny.wejudge.online/${iconMd5}` :
+            `http://qny.wejudge.online/${iconMd5}` :
             this.props.iconRawURL;
         return (
             <LibraryItemComponent
